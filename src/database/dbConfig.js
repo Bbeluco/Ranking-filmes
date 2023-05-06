@@ -8,7 +8,9 @@ const conn = mysql.createConnection({
     database: "ranking_movies"
 })
 
-conn.connect((error) => {
-    if(error) throw error;
-    console.log("CONECTADO")
-})
+// conn.connect((error) => {
+//     if(error) throw error;
+//     console.log("CONECTADO")
+// })
+
+export default conn;

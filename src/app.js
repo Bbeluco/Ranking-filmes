@@ -4,6 +4,8 @@ import routers from './routes/index.js';
 
 const app = express();
 
+app.use(express.json());
+
 routers(app);
 
 app.use((req, res, next) => {

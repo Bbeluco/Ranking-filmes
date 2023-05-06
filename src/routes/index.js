@@ -1,4 +1,5 @@
 import moviesRouter from "./moviesRoute.js";
+import usersRoute from "./usersRoute.js";
 
 const routers = (app) => {
     app.route('/', (req, res) => {
@@ -6,6 +7,7 @@ const routers = (app) => {
     })
 
     app.use('/movies', moviesRouter);
+    app.use('/users', usersRoute);
 }
 
 export default routers;
